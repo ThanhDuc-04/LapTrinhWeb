@@ -1,0 +1,51 @@
+.leno {
+    padding-bottom: 5%;
+}
+.leno a{
+    display: flex;
+    justify-content: center;
+}
+.leno img {
+    padding-top: 30px;
+    width: 75%;
+    padding-bottom: 10px;
+}
+.leno p {
+   padding-left: 5%;
+   padding-right: 5% ;
+   font-size: 16px;
+   margin: 0;
+   padding-bottom: 20px;
+   padding-top: 3px;
+   color: black;
+}
+.leno h6 {
+    padding-left: 9px;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 5%;
+    color: black;
+}
+.leno h5{
+    color: red;
+    margin: 0;
+    font-size: 16.9px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+.chitiet a{
+    display: block;
+}
+.k_chitiet h4{
+    font-size: 12px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    background: #ebeef4;
+    justify-content: center;
+    margin: 0;
+    height: 40px;
+    border-radius: 15px;
+}
+
+

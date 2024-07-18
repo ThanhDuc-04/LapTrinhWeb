@@ -1,0 +1,53 @@
+.msi {
+    padding-bottom: 5%;
+}
+.msi a{
+    display: flex;
+    justify-content: center;
+}
+.msi img {
+    height: 140px;
+    padding-top: 30px;
+    width: 140px;
+    padding-bottom: 10px;
+}
+.msi p {
+   padding-left: 12px;
+   padding-right: 6px;
+   font-size: 16px;
+   margin: 0;
+   padding-bottom: 20px;
+   padding-top: 3px;
+   color: black;
+}
+.msi h6 {
+    padding-left: 14px;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 8px;
+    color: black;
+}
+.msi h5{
+    color: red;
+    margin: 0;
+    font-size: 16.9px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+.chitiet a{
+    display: block;
+}
+.k_chitiet h4{
+    font-size: 12px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    background: #ebeef4;
+    justify-content: center;
+    margin: 0;
+    height: 40px;
+    border-radius: 15px;
+}
+
+
