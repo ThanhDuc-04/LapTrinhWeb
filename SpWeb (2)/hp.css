@@ -39,7 +39,7 @@
     padding-left: 7.7%;
     max-width: 100%;
 }
-.vien1 {
+.vien-hpPro {
     margin-left: 3%;
     width: 15.3%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
@@ -73,12 +73,21 @@
     justify-content: center;
     align-items: center;
 }
-.tt_sp img {
-    width: 30%;
-    padding-left: 5%;
-    margin-bottom: 9%;
+.info-cart {
+    width: 80%;
 }
-.tt_sp {
+.product-information .info-cart img{
+    width: 50%;
+    padding-left: 20%;
+    margin-bottom: 2%;
+}
+.product-information .info-cart h1 {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 13%;
+    padding-bottom: 10px;
+}
+.product-information {
     background-color: rgb(196, 229, 238);
     border-radius: 5px;
     display: flex;
@@ -86,17 +95,23 @@
     width: 100%;
     height: 100%;    
 }
-.tt_sp h3 {
+
+.info-cart span p{
+    font-size: 20px;
+    color: red;
+    padding-left: 20%;
+    margin-top: -10px;
+}
+.product-information h3 {
     position: absolute;
     top: 0%;
     right: 30%;
     padding-bottom: 50px;
 }
-.nd {
-    padding-left: 10%;
-    font-size:90%;
+.product-information ul {
+    margin: 0;
 }
-.tt_sp ul li {
+.product-information ul li {
     list-style: none;
     padding: 1% 1%;
 }
@@ -108,26 +123,15 @@
     color: red;
     font-size: 25px;
 }
-.specifications {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 30%;
-    height: 60%;
-    background: white; 
-}
-.box_while {
-    background: #ebeef4;
-    border-radius: 20px;
-}
+
 .add button {
-    padding: 2px 10px;
+    padding: 10px 30px 10px 30px;
     position: absolute;
-    left: 2%;
-    bottom: 20%;
-    margin-left: 5%;
-    color: black;
-    background: rgb(242, 226, 226);
-    display: flex;
-    align-items: center; /* Căn chỉnh theo trục dọc */
+    left: 1%;
+    bottom: 13%;
+    margin-left: 3%;  /*màn hình đức lỏ xóa*/
+    color: white;
+    background: rgb(107, 204, 241);
     box-shadow: 0 0 5px rgb(229, 192, 192);
     border: none;
 }
@@ -136,16 +140,86 @@
     background-color: red;
 }
 .buy button {
-    padding: 2px 10px 2px 10px;
+    padding: 10px 40px 10px 40px;
     position: absolute;
-    left: 27%;
-    bottom: 20%;
-    margin-left: 5%;
-    color: black;
-    background: rgb(242, 226, 226);
+    left: 19%;
+    bottom: 13%;
+    margin-left: 4%;
+    color: white;
+    background: rgb(107, 204, 241);
     box-shadow: 0 0 5px rgb(229, 192, 192);
     border: none;
 }
+
 button {
     font-size: 18px;
+}
+
+
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top:30px;
+}
+
+.cart h2{
+    margin-bottom: 20px;
+}
+
+.cart table {
+    width: 100%;
+}
+
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+
+.cart table tr td {
+    border-bottom: 1 solid #ddd;
+    padding: 12px 0;
+}
+
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+
+.cart table tbody tr th:last-child{
+    text-align: right;
+}
+
+.cart .price-total{
+    text-align: right;
+    font-weight: bold;
+}
+
+.cart button{
+    margin-top: 12px;
+    height: 30px;
+    padding:0 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: tomato;
+}
+
+.cart{
+    position: fixed;
+    height:100vh;
+    width: 400px;
+    right:0;
+    top:0;
+    background-color: darkgoldenrod;
+    padding:12px 20px;
+    overflow-y: scroll;
+    right: -100%;
+    transition: all 0.3s ease;
+}
+
+th a {
+    text-decoration: none;
+}
+.vcloseBox {
+    cursor: pointer;
+    color: red;
 }

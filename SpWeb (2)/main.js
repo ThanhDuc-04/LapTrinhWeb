@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() { // Chạy khi toàn bộ nội dung được tải
     chitiet();
     setupSlideShow();
@@ -5,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() { // Chạy khi toàn b
 });
 
 function chitiet(){
-    const showBox = document.querySelectorAll('.showBox');
+    const showBox = document.querySelectorAll('j.showBox');
     const closeBox = document.querySelectorAll('.closeBox');
 
     // Thêm sự kiện click cho tất cả các phần tử có class là .showBox
@@ -119,7 +120,7 @@ function chitiet(){
     }
 
     function chitiet() {
-        const showBox = document.querySelectorAll('.showBox');
+        const showBox = document.querySelectorAll('.hp');
         const closeBox = document.querySelectorAll('.closeBox');
 
         // Thêm sự kiện click cho tất cả các phần tử có class là .showBox
@@ -149,3 +150,6 @@ function chitiet(){
             });
         });
     }
+   
+
+    
