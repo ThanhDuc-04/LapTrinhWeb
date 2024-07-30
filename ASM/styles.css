@@ -1,0 +1,256 @@
+body{
+    font-family:Arial, sans-serif ;
+    margin: 0;
+    padding :0;
+    background-color: white;
+}
+
+html header {
+    font-size: 100%;
+    width: 100%;
+}
+
+header{
+    background-color: hsl(0, 100%, 41%);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+}
+
+.logo img{
+    max-height: 50px;
+}
+
+nav {
+    padding-left: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+}
+
+nav ul li{
+    margin:0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-bar{
+    display:flex;
+    align-items:center
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    outline:none;
+    width: 0px;
+    height: auto;
+}
+
+.search-bar #search-text{
+    transition: all 0.25s ease-in-out;
+}
+
+.search-bar:hover #search-text, .search-bar #search-text:valid{
+    width: 300px;
+}
+
+.search-bar button{
+    background-color: white;
+    border:none;
+    border-radius: 10px 0 0 10px;
+    padding: 4px;
+    margin-left: 5px;
+    font-size:16px;
+    cursor: pointer;
+}
+
+.dropdown:hover .submenu {
+    display: flex; 
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: while;
+    top:50px;
+    left:auto;
+    background-color: pink;
+    color:black;
+    box-shadow: 0px 8 px 16px 0px;
+    z-index: 1;
+    width: 860px;  /* Đảm bảo submenu rộng bằng menu chính */
+    padding: 5px;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown button i {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+}
+
+.slide-show {
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-show2{
+    width: 100%;  /* Đảm bảo chiếm toàn bộ chiều rộng của container */
+    max-width: 1100px; /* Kích thước tối đa của slideshow2 */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.list-img {
+    display: flex;
+    justify-content: space-between; 
+    transition: 0.5s;
+}
+
+.list-img img {
+    width: 700px; 
+    height: auto;
+}
+
+.btn:hover{
+    color:white;
+}
+
+.btn{
+    font-size: 25px;
+    color: #999;
+    position: absolute;
+    top:40%;
+    transition: 0.5s;
+    cursor: pointer ;
+}
+
+.btn-left{
+    left: 0;
+}
+
+.btn-right{
+    right: 0;
+}
+
+.featured-products {
+    text-align: center;
+    background-color: pink;
+    width: 90%; /* Chiều rộng */
+    padding: 10px;
+    border-radius: 30px;
+    margin: 0 auto; 
+}
+
+.featured-products h2 {
+    color: #F44336;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.boc{
+    display: flex;
+    justify-content: space-between; 
+    transition: 0.5s;
+}
+.btn2:hover{
+    color:white;
+}
+
+.btn2{
+    font-size: 40px;
+    color: #999;
+    position: absolute;
+    top:70%;
+    transition: 0.5s;
+    cursor: pointer ;
+}
+
+.btn-left2{
+    left: 53px;
+}
+
+.btn-right2{
+    right: 53px;
+}
+
+.sanpham2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.border_sp {
+    margin: 0 10px;
+    height: 350px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    background: white;
+}
+.macboook a{
+    display: flex;
+    justify-content: center;
+}
+.macboook img {
+    height: 140px;
+    padding-top: 20px;
+    width: 140px;
+    padding-bottom: 10px;
+}
+.macboook p {
+   padding-left: 12px;
+   padding-right: 5px;
+   font-size: 16.9px;
+   margin: 0;
+   padding-bottom: 5px;
+   padding-top: 3px;
+   color: black;
+}
+.macboook h6 {
+    padding-left: 14px;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 8px;
+    color: black;
+}
+.macboook h5{
+    color: red;
+    margin: 0;
+    font-size: 16.9px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}

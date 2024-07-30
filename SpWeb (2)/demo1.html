@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Thông tin chi tiết sản ph</title>
+    <link rel="stylesheet" href="demo1.css">
+    <script>
+        function exit() {
+            document.querySelectorAll('.fa-times').forEach(close => {
+                close.onclick = () => {
+                    window.location.href = 'demo.html'; // Điều hướng về trang chủ
+                };
+            });
+        }
+
+        window.onload = exit; // Gọi hàm exit khi trang được tải
+    </script>
+</head>
+
+<body>
+    <div class="box-shadow">
+        <div class="product-information">
+            <div class="info-cart">
+                <h1>Laptop HP Gaming Victus 16-D1193TX </h1>
+                <i class="fas fa-times"></i>
+                <img src="img/hp_Vitus10.png" alt="">
+                <span>27.990.000<sup>đ</sup></span>
+                <div class="buttons">
+                    <a href="#" class="buy">Mua</a>
+                    <a href="#" class="add">Thêm vào giỏ</a>
+                </div>
+            </div>
+            <div class="parameter">
+                <h3>THÔNG SỐ KỸ THUẬT</h3>
+                <ul>
+                    <li>Loại card đồ họa: NVIDIA GeForce RTX 3050 4GB GDDR6</li>
+                    <li>Dung lượng: RAM 8GB</li>
+                    <li>Loại RAM DDR5 4800MHz (up to 32GB)</li>
+                    <li>Số khe ram: 1x 8GB</li>
+                    <li>Ổ cứng: 512GB SSD M.2 PCIe</li>
+                    <li>Kích thước màn hình: 16.1 inches</li>
+                    <li>Công nghệ màn hình: Tần số quét 144 Hz Viền siêu mỏng Màn hình chống chói Độ sáng 250 nits Độ phủ màu 45% NTSC</li>
+                    <li>Pin: 70Wh</li>
+                    <li>Hệ điều hành: Windows 11 Home</li>
+                    <li>Độ phân giải màn hình: 1920 x 1080 pixels (FullHD)</li>
+                    <li>Cổng giao tiếp: 3x USB 3.1 Gen1 Type-A 1x USB 3.1 Gen1 Type-C (DisplayPort 1.4) hỗ trợ sạc 1x HDMI 2.1 1x Đầu đọc thẻ Multi SD 1x Mic-in/ Headphone-out combo jack 1x RJ45</li>
+                </ul>     
+            </div>
+        </div>
+    </div>
+</body>
+</html>
