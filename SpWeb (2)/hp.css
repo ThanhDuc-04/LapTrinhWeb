@@ -1,99 +1,123 @@
 .hp {
-    padding-bottom: 5%;
+    padding-top: 3px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
 }
-.hp a{
+
+.hp a {
     display: flex;
     justify-content: center;
 }
+
 .hp img {
-    padding-top: 10%;
-    width: 75%;
+    max-height: 11rem;
+    width: auto;
     padding-bottom: 10px;
 }
-.hp p {
-   padding-left: 12px;
-   padding-right: 6px;
-   font-size: 16px;
-   margin: 0;
-   padding-bottom: 14px;
-   padding-top: 3px;
-   color: black;
+
+.vien:hover {
+    outline: 5px solid red;
+    outline-offset: 0;
 }
-.hp h6 {
-    padding-left: 9px;
-    font-size: 12px;
+
+.vien .hp img:hover {
+    transform: scale(.9);
+}
+
+
+.hp p, .hp .price, .hp .stars {
     margin: 0;
-    padding-bottom: 5%;
-    color: black;
 }
-.hp h5{
+
+.price {
     color: red;
-    margin: 0;
-    font-size: 16.9px;
-    padding-left: 12px;
-    padding-bottom: 10px;
+    font-size: 1rem;
+    padding: 1rem ;
+    padding-top: 0;
 }
+
+/* Thêm các thuộc tính không liên quan đến chiều cao tự động */
+.MacBook .hp .stars {
+    padding:5px 5px;
+    font-size: .8rem;
+    padding-left:.8rem;
+}
+
+.MacBook .hp .stars i {
+    color: #27ae60;
+}
+
+
+#Mvien-hpPro {
+    margin-left: 3.4%;
+}
+
+#Xvien-hpPro {
+    margin-left: 3.4%;
+}
+
+.vien-hpPro:hover {
+    outline: 5px solid red;
+    outline-offset: 0;
+}
+
+.vien-hpPro .hp img:hover {
+    transform: scale(.9);
+}
+
 .sanpham_hp { 
+    padding-bottom: 1%;
     display: flex;
     align-items: center;
-    padding-left: 7.7%;
+    padding-left: 5%;
     max-width: 100%;
 }
 .vien-hpPro {
     margin-left: 3%;
-    width: 15.3%;
+    width: 15.6%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
     background: white;
 }
-.chitiet a{
-    display: block;
-}
-.k_chitiet h4{
-    font-size: 12px;
-    padding-left: 15px;
-    display: flex;
-    align-items: center;
-    background: #ebeef4;
-    justify-content: center;
-    margin: 0;
-    height: 40px;
-    border-radius: 15px;
-}
+
 
 
 .box-shadow {
     display: none; /* Ban đầu ẩn hộp box-shadow */
     position: fixed;
-    top: 10%;
-    left: 7%;
-    width: 85%;
-    height: 80%;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Hiệu ứng nền mờ */
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 .info-cart {
     width: 80%;
 }
 .product-information .info-cart img{
-    width: 50%;
+    width: 70%;
     padding-left: 20%;
     margin-bottom: 2%;
 }
 .product-information .info-cart h1 {
     font-size: 20px;
     margin: 0;
-    padding-left: 13%;
+    padding-right: 10%;
     padding-bottom: 10px;
+    text-align: center;
 }
 .product-information {
     background-color: rgb(196, 229, 238);
     border-radius: 5px;
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 100%;    
+    width: 80%;   
+    height: 80%;
+    position: relative;
 }
 
 .info-cart span p{
@@ -101,12 +125,11 @@
     color: red;
     padding-left: 20%;
     margin-top: -10px;
+    padding-bottom: 10px;
 }
 .product-information h3 {
-    position: absolute;
-    top: 0%;
-    right: 30%;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    margin-left: 10%;
 }
 .product-information ul {
     margin: 0;
@@ -115,40 +138,36 @@
     list-style: none;
     padding: 1% 1%;
 }
+
 .closeBox {
-    position: absolute;
-    right: 3%;
-    top: 3%;
+    position: absolute; /* Định vị tuyệt đối so với phần tử cha */
     cursor: pointer;
     color: red;
+    top: 10px; /* Khoảng cách từ cạnh trên */
+    right: 10px; /* Khoảng cách từ cạnh phải */
     font-size: 25px;
+    padding: 5px;
 }
 
 .add button {
     padding: 10px 30px 10px 30px;
-    position: absolute;
-    left: 1%;
-    bottom: 13%;
-    margin-left: 3%;  /*màn hình đức lỏ xóa*/
     color: white;
     background: rgb(107, 204, 241);
     box-shadow: 0 0 5px rgb(229, 192, 192);
     border: none;
+    margin: 0 auto;
 }
 
 .select button:hover {
     background-color: red;
 }
 .buy button {
-    padding: 10px 40px 10px 40px;
-    position: absolute;
-    left: 19%;
-    bottom: 13%;
-    margin-left: 4%;
+    padding: 10px 30px 10px 30px;
     color: white;
     background: rgb(107, 204, 241);
     box-shadow: 0 0 5px rgb(229, 192, 192);
     border: none;
+    margin: 0 5px;
 }
 
 button {
@@ -161,6 +180,7 @@ button {
     margin: auto;
     text-align: center;
     padding-top:30px;
+    z-index: 1000;
 }
 
 .cart h2{
@@ -223,3 +243,9 @@ th a {
     cursor: pointer;
     color: red;
 }
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

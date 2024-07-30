@@ -1,12 +1,30 @@
-.MacBook a{
+/* Đặt lại các thuộc tính toàn cục */
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-    display: flex;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
 }
+
 .MacBook {
-    margin-top: 20px;
+    max-width: 100%;
+}
+
+
+
+
+
+body {
+    background-color: white;
 }
 
 .tab {
+    padding-top: 20px;
     display: flex;
 }
 .tab a{
@@ -22,59 +40,114 @@
     height: 30px;   
     background: #f3f4f6;
 }
+
+/* Màn hình rộng (desktop) */
+@media (min-width: 1024px) {
+    .vien {
+        flex: 1 1 220px; /* Kích thước cơ bản lớn hơn */
+    }
+}
+
+/* Màn hình vừa (tablet) */
+@media (max-width: 1024px) {
+    .vien {
+        flex: 1 1 180px; /* Kích thước cơ bản nhỏ hơn */
+    }
+}
+
+/* Màn hình nhỏ (di động) */
+@media (max-width: 768px) {
+    .vien {
+        flex: 1 1 150px; /* Kích thước cơ bản nhỏ nhất */
+    }
+}
+
+
 .sanpham {
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
     max-width: 100%;
+    flex-wrap: wrap; /* Cho phép các mục xếp hàng khi cần */
+    gap: 15px; /* Khoảng cách giữa các mục */
 }
+
 .vien {
-    margin-left: 3%;
-    width: 14.12%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    flex: 1 1 200px; /* Các mục có thể mở rộng và thu hẹp với kích thước cơ bản là 200px */
+    max-width: 227px; /* Chiều rộng tối đa */
+    min-width: 150px; /* Chiều rộng tối thiểu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background: white;
-    box-sizing: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px; /* Khoảng cách bên trong */
 }
+
+
+
+/* Phần tử con */
 .macboook-air {
-    padding-bottom: 5%;
+    margin: 0;
+    text-align: center;
 }
-.macboook-air a{
+
+.macboook-air a {
     display: flex;
     justify-content: center;
 }
+
 .macboook-air img {
-    padding-top: 20px;
-    width: 75%;
+    max-height: 11rem;
+    width: auto;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.macboook-air p {
-   padding-left: 12px;
-   padding-right: 5px;
-   font-size: 16.9px;
-   margin: 0;
-   padding-bottom: 3%;
-   padding-top: 1%;
-   color: black;
+
+.vien:hover {
+    outline: 5px solid red;
+    outline-offset: 0;
 }
-.macboook-air h6 {
-    padding-left: 9px;
-    font-size: 12px;
+
+.vien .macboook-air img:hover {
+    transform: scale(.9);
+}
+
+
+.macboook-air p, .macboook-air .price, .macboook-air .stars {
     margin: 0;
-    padding-bottom: 5%;
-    color: black;
 }
-.macboook-air h5{
+
+.price {
     color: red;
-    margin: 0;
-    font-size: 16.9px;
-    padding-left: 12px;
-    padding-bottom: 5%;
+    font-size: 1rem;
+    padding: 1rem 0;
+    padding-top: 0;
 }
-.chitiet a{
+
+/* Thêm các thuộc tính không liên quan đến chiều cao tự động */
+.MacBook .macboook-air .stars {
+    padding:5px 5px;
+    font-size: .8rem;
+    padding-left:.8rem;
+}
+
+.MacBook .macboook-air .stars i {
+    color: #27ae60;
+}
+
+.chitiet a {
     display: block;
 }
-.k_chitiet h4{
+.chitiet p {
+    color: black;
+    padding: 5px;
+}
+
+.k_chitiet h4 {
     font-size: 12px;
     padding-left: 15px;
     display: flex;
@@ -86,6 +159,18 @@
     border-radius: 15px;
 }
 
-.name{
-    padding-left:13%;
+.name {
+    padding:10px 0 10px 12%;
+}
+.name h3 {
+    padding-bottom: 1rem;
+}
+
+.vien .new {
+    position: absolute;
+    top: 5px; /* Khoảng cách từ phía trên */
+    right: 5px; /* Khoảng cách từ phía phải */
+    width: 40px; /* Điều chỉnh kích thước hình ảnh theo ý bạn */
+    height: auto;
+    z-index: 1; /* Đảm bảo nó nằm trên các phần tử khác */
 }

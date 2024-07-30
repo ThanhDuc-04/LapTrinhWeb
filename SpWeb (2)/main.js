@@ -120,7 +120,7 @@ function chitiet(){
     }
 
     function chitiet() {
-        const showBox = document.querySelectorAll('.hp');
+        const showBox = document.querySelectorAll('.hp ,.macboook-air');
         const closeBox = document.querySelectorAll('.closeBox');
 
         // Thêm sự kiện click cho tất cả các phần tử có class là .showBox
